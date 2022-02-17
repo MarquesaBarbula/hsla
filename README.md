@@ -22,7 +22,7 @@ HTML5 input type range show range value
 https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value
 
 
-# Coded with love by Mariana Barnola
+### Coded with love by Mariana Barnola
 https://github.com/MarquesaBarbula
 
 ;)
