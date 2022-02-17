@@ -1,18 +1,23 @@
 # HSL color test
 
-Reading this great article: The HSB Color System: A Practitioner's Primer by Erik D. Kennedy [ https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html ] inspired me to create a visual guide with controls that allow the user to change these parameters and learn what those changes do.
+Reading this great article [The HSB Color System: A Practitioner's Primer by Erik D. Kennedy](https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html ) inspired me to create a visual guide with controls that allows the user to change these parameters and learn what those changes do.
 
-In short, somewhere to have some hands-on practice on this great and not so much used color system.
+Somewhere to have some hands-on practice on this great and not so much used color system.
 
 It has three sections:
 
-The first section is a guide to the color wheel, from 0º to 350º. A quick reference to each color and it angle degree in the color wheel, so to learn about the first value: "H"
+**The first section** is a guide to the color wheel, from 0º to 350º. A quick reference to each color and its angle degree in the color wheel, to learn about the first value: "H"
 
-In the second section the user can learn how the hue selected with a slider changes within the other tree values: "S" saturation, "L" lightness and "A" alpha.
+**In the second section** the user can learn how the hue selected with a slider changes within the other tree values: "S" saturation, "L" lightness and "A" alpha.
 
-The third part, my favourite, lets the user create a custom color palette of five colors, modifying every parameter with sliders.
+**The third part** , my favourite, lets the user create a custom color palette of five colors, modifying every parameter with sliders.
 
-I hope you find this useful!
+What do you think about it?
+What do you think could be usefull to add?
+Do you have an idea for improving it?
+
+[Check it out!](https://marquesabarbula.github.io/hsla.github.io/)
+[GitHub repo](https://github.com/MarquesaBarbula/hsla.github.io)
 
 
 
