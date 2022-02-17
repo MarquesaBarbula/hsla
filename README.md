@@ -6,7 +6,7 @@ Somewhere to have some hands-on practice on this great and not so much used colo
 
 It has three sections:
 
-**The first section** is a guide to the color wheel, from 0º to 350º. A quick reference to each color and its angle degree in the color wheel, to learn about the first value: "H"
+**The first section** is a guide to the color wheel, from 0º to 350º. A quick reference to each color and its angle degree in the color wheel, to learn about the first value: "H" the hue.
 
 **In the second section** the user can learn how the hue selected with a slider changes within the other tree values: "S" saturation, "L" lightness and "A" alpha.
 
