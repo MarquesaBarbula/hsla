@@ -1,7 +1,11 @@
-/* RESET BORDER BOX  */
+/* RESET BORDER BOX - text size adjust for safari in iphones  */
 
 html {
     box-sizing: border-box;
+
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
   }
   *,
   *:before,
