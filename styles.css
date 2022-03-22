@@ -133,17 +133,22 @@ footer {
     font-weight: 900;
 }
 
-.text-form {
+/* .text-form {
     color: whitesmoke;
     font-weight: 400;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
+
 output {
-    font-size: 0.8rem;
     color: whitesmoke;
-}
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+} */
+
+
 
 
 /* COLORS LAYOUT */
@@ -199,13 +204,21 @@ output {
     padding: 10%;
 }
 
-form {
-        display: block;
-}
 
 #hue-form {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+#new-hue-slider {
+    display: block;
+    width: 50%;
+    margin: auto;
+    align: center;
 }
 
 .colores {
@@ -217,7 +230,10 @@ form {
     width: 100%;
     margin: auto;
     margin-top: 1rem;
-    text-align: center;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.5rem;
 }
 
 .custom {
@@ -233,6 +249,13 @@ form {
     width: 100%;
     height: 9rem;
     margin-bottom: 2rem;
+}
+
+#hue1, #hue2, #hue3, #hue4, #hue5,
+#sat1, #sat2, #sat3, #sat4, #sat5,
+#lig1, #lig2, #lig3, #lig4, #lig5,
+#alph1, #alph2, #alph3, #alph4, #alph5 {
+    width: 70%;
 }
 
 
@@ -265,6 +288,10 @@ form {
 
     .custom-controls {
         margin-bottom: 3rem;
+    }
+
+    #new-hue-slider {
+        width: 70%;
     }
 
 }
@@ -531,12 +558,3 @@ form {
 .color-cust5 {
     background-color: hsla(var(--try_h_5), var(--try_s_5), var(--try_l_5), var(--try_a_5));
 }
-
-
-
-/* FORM STYLING */
-
-/* CHANGE SLIDER COLOR */
-
-
-
