@@ -44,20 +44,50 @@ numhue1.addEventListener("input", (e) => {
     root.style.setProperty("--try_h_1", e.target.value);
 });
 
+// --connect slider and number field
+var rangeHue1 = document.querySelector("#hue1");
+var fieldHue1 = document.querySelector("#hue1-number");
+
+rangeHue1.addEventListener('input', function (e) { fieldHue1.value = e.target.value; });
+fieldHue1.addEventListener('input', function (e) { rangeHue1.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
 
 // color 1 - sat1
 
-const slidersat1 = document.getElementById("sat1");
-const numsat1 = document.getElementById("sat1-number");
-const rootsat1 = document.documentElement;
+const sliderSat1 = document.getElementById("sat1");
+const numSat1 = document.getElementById("sat1-number");
+const rootSat1 = document.documentElement;
 
-slidersat1.addEventListener("input", (e) => {
+sliderSat1.addEventListener("input", (e) => {
     root.style.setProperty("--try_s_1", e.target.value + "%");
 });
 
-numsat1.addEventListener("input", (e) => {
+numSat1.addEventListener("input", (e) => {
     root.style.setProperty("--try_s_1", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangesat1 = document.querySelector("#sat1");
+var fieldsat1 = document.querySelector("#sat1-number");
+
+rangesat1.addEventListener('input', function (e) { fieldsat1.value = e.target.value; });
+fieldsat1.addEventListener('input', function (e) { rangesat1.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
 
 // color 1 - lig1
 
@@ -73,6 +103,22 @@ numlig1.addEventListener("input", (e) => {
     root.style.setProperty("--try_l_1", e.target.value + "%");
 });
 
+// --connect slider and number field
+var rangeLig1 = document.querySelector("#lig1");
+var fieldLig1 = document.querySelector("#lig1-number");
+
+rangeLig1.addEventListener('input', function (e) { fieldLig1.value = e.target.value; });
+fieldLig1.addEventListener('input', function (e) { rangeLig1.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 1 - alph1
 
 const slideralph1 = document.getElementById("alph1");
@@ -86,6 +132,21 @@ slideralph1.addEventListener("input", (e) => {
 numalph1.addEventListener("input", (e) => {
     root.style.setProperty("--try_a_1", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeAlph1 = document.querySelector("#alph1");
+var fieldAlph1 = document.querySelector("#alph1-number");
+
+rangeAlph1.addEventListener('input', function (e) { fieldAlph1.value = e.target.value; });
+fieldAlph1.addEventListener('input', function (e) { rangeAlph1.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
 
 
 // color 2 - hue2
@@ -102,6 +163,22 @@ numhue2.addEventListener("input", (e) => {
     root.style.setProperty("--try_h_2", e.target.value);
 });
 
+// --connect slider and number field
+var rangeHue2 = document.querySelector("#hue2");
+var fieldHue2 = document.querySelector("#hue2-number");
+
+rangeHue2.addEventListener('input', function (e) { fieldHue2.value = e.target.value; });
+fieldHue2.addEventListener('input', function (e) { rangeHue2.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 2 - sat2
 
 const slidersat2 = document.getElementById("sat2");
@@ -115,6 +192,22 @@ slidersat2.addEventListener("input", (e) => {
 numsat2.addEventListener("input", (e) => {
     root.style.setProperty("--try_s_2", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeSat2 = document.querySelector("#sat2");
+var fieldSat2 = document.querySelector("#sat2-number");
+
+rangeSat2.addEventListener('input', function (e) { fieldSat2.value = e.target.value; });
+fieldSat2.addEventListener('input', function (e) { rangeSat2.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
 
 // color 2 - lig2
 
@@ -130,6 +223,22 @@ numlig2.addEventListener("input", (e) => {
     root.style.setProperty("--try_l_2", e.target.value + "%");
 });
 
+// --connect slider and number field
+var rangeLig2 = document.querySelector("#lig2");
+var fieldLig2 = document.querySelector("#lig2-number");
+
+rangeLig2.addEventListener('input', function (e) { fieldLig2.value = e.target.value; });
+fieldLig2.addEventListener('input', function (e) { rangeLig2.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 2 - alph2
 
 const slideralph2 = document.getElementById("alph2");
@@ -143,6 +252,21 @@ slideralph2.addEventListener("input", (e) => {
 numalph2.addEventListener("input", (e) => {
     root.style.setProperty("--try_a_2", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeAlph2 = document.querySelector("#alph2");
+var fieldAlph2 = document.querySelector("#alph2-number");
+
+rangeAlph2.addEventListener('input', function (e) { fieldAlph2.value = e.target.value; });
+fieldAlph2.addEventListener('input', function (e) { rangeAlph2.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
 
 
 // color 3 - hue3
@@ -159,6 +283,22 @@ numhue3.addEventListener("input", (e) => {
     root.style.setProperty("--try_h_3", e.target.value);
 });
 
+// --connect slider and number field
+var rangeHue3 = document.querySelector("#hue3");
+var fieldHue3 = document.querySelector("#hue3-number");
+
+rangeHue3.addEventListener('input', function (e) { fieldHue3.value = e.target.value; });
+fieldHue3.addEventListener('input', function (e) { rangeHue3.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 3 - sat3
 
 const slidersat3 = document.getElementById("sat3");
@@ -172,6 +312,22 @@ slidersat3.addEventListener("input", (e) => {
 numsat3.addEventListener("input", (e) => {
     root.style.setProperty("--try_s_3", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeSat3 = document.querySelector("#sat3");
+var fieldSat3 = document.querySelector("#sat3-number");
+
+rangeSat3.addEventListener('input', function (e) { fieldSat3.value = e.target.value; });
+fieldSat3.addEventListener('input', function (e) { rangeSat3.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
 
 // color 3 - lig3
 
@@ -187,6 +343,22 @@ numlig3.addEventListener("input", (e) => {
     root.style.setProperty("--try_l_3", e.target.value + "%");
 });
 
+// --connect slider and number field
+var rangeLig3 = document.querySelector("#lig3");
+var fieldLig3 = document.querySelector("#lig3-number");
+
+rangeLig3.addEventListener('input', function (e) { fieldLig3.value = e.target.value; });
+fieldLig3.addEventListener('input', function (e) { rangeLig3.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 3 - alph3
 
 const slideralph3 = document.getElementById("alph3");
@@ -200,6 +372,21 @@ slideralph3.addEventListener("input", (e) => {
 numalph3.addEventListener("input", (e) => {
     root.style.setProperty("--try_a_3", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeAlph3 = document.querySelector("#alph3");
+var fieldAlph3 = document.querySelector("#alph3-number");
+
+rangeAlph3.addEventListener('input', function (e) { fieldAlph3.value = e.target.value; });
+fieldAlph3.addEventListener('input', function (e) { rangeAlph3.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
 
 
 // color 4 - hue4
@@ -216,6 +403,22 @@ numhue4.addEventListener("input", (e) => {
     root.style.setProperty("--try_h_4", e.target.value);
 });
 
+// --connect slider and number field
+var rangeHue4 = document.querySelector("#hue4");
+var fieldHue4 = document.querySelector("#hue4-number");
+
+rangeHue4.addEventListener('input', function (e) { fieldHue4.value = e.target.value; });
+fieldHue4.addEventListener('input', function (e) { rangeHue4.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 4 - sat4
 
 const slidersat4 = document.getElementById("sat4");
@@ -229,6 +432,22 @@ slidersat4.addEventListener("input", (e) => {
 numsat4.addEventListener("input", (e) => {
     root.style.setProperty("--try_s_4", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeSat4 = document.querySelector("#sat4");
+var fieldSat4 = document.querySelector("#sat4-number");
+
+rangeSat4.addEventListener('input', function (e) { fieldSat4.value = e.target.value; });
+fieldSat4.addEventListener('input', function (e) { rangeSat4.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
 
 // color 4 - lig4
 
@@ -244,6 +463,22 @@ numlig4.addEventListener("input", (e) => {
     root.style.setProperty("--try_l_4", e.target.value + "%");
 });
 
+// --connect slider and number field
+var rangeLig4 = document.querySelector("#lig4");
+var fieldLig4 = document.querySelector("#lig4-number");
+
+rangeLig4.addEventListener('input', function (e) { fieldLig4.value = e.target.value; });
+fieldLig4.addEventListener('input', function (e) { rangeLig4.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 4 - alph4
 
 const slideralph4 = document.getElementById("alph4");
@@ -257,6 +492,21 @@ slideralph4.addEventListener("input", (e) => {
 numalph4.addEventListener("input", (e) => {
     root.style.setProperty("--try_a_4", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeAlph4 = document.querySelector("#alph4");
+var fieldAlph4 = document.querySelector("#alph4-number");
+
+rangeAlph4.addEventListener('input', function (e) { fieldAlph4.value = e.target.value; });
+fieldAlph4.addEventListener('input', function (e) { rangeAlph4.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
 
 
 // color 5 - hue5
@@ -273,6 +523,22 @@ numhue5.addEventListener("input", (e) => {
     root.style.setProperty("--try_h_5", e.target.value);
 });
 
+// --connect slider and number field
+var rangeHue5 = document.querySelector("#hue5");
+var fieldHue5 = document.querySelector("#hue5-number");
+
+rangeHue5.addEventListener('input', function (e) { fieldHue5.value = e.target.value; });
+fieldHue5.addEventListener('input', function (e) { rangeHue5.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 5 - sat5
 
 const slidersat5 = document.getElementById("sat5");
@@ -286,6 +552,22 @@ slidersat5.addEventListener("input", (e) => {
 numsat5.addEventListener("input", (e) => {
     root.style.setProperty("--try_s_5", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeSat5 = document.querySelector("#sat5");
+var fieldSat5 = document.querySelector("#sat5-number");
+
+rangeSat5.addEventListener('input', function (e) { fieldSat2.value = e.target.value; });
+fieldSat5.addEventListener('input', function (e) { rangeSat2.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
 
 // color 5 - lig5
 
@@ -301,6 +583,22 @@ numlig5.addEventListener("input", (e) => {
     root.style.setProperty("--try_l_5", e.target.value + "%");
 });
 
+// --connect slider and number field
+var rangeLig4 = document.querySelector("#lig4");
+var fieldLig4 = document.querySelector("#lig4-number");
+
+rangeLig4.addEventListener('input', function (e) { fieldLig4.value = e.target.value; });
+fieldLig4.addEventListener('input', function (e) { rangeLig4.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}
+
+
 // color 5 - alph5
 
 const slideralph5 = document.getElementById("alph5");
@@ -314,3 +612,18 @@ slideralph5.addEventListener("input", (e) => {
 numalph5.addEventListener("input", (e) => {
     root.style.setProperty("--try_a_5", e.target.value + "%");
 });
+
+// --connect slider and number field
+var rangeAlph5 = document.querySelector("#alph5");
+var fieldAlph5 = document.querySelector("#alph5-number");
+
+rangeAlph5.addEventListener('input', function (e) { fieldAlph5.value = e.target.value; });
+fieldAlph5.addEventListener('input', function (e) { rangeAlph5.value = e.target.value; });
+
+var n = scaleValue(0, [-360,+360], [-1,1]);
+
+function scaleValue(value, from, to) {
+	var scale = (to[1] - to[-1]) / (from[1] - from[-1]);
+	var capped = Math.min(from[1], Math.max(from[1], value)) - from[0];
+  console.log(capped);
+}

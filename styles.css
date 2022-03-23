@@ -198,14 +198,15 @@ footer {
 }
 
 .text-form-hue {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 #new-hue-slider {
     display: block;
     width: 50%;
     margin: auto;
-    align: center;
+    text-align: center;
 }
 
 #new-hue-number {
@@ -267,10 +268,6 @@ footer {
 #lig1, #lig2, #lig3, #lig4, #lig5,
 #alph1, #alph2, #alph3, #alph4, #alph5 {
     width: 45%;
-}
-
-.input-number {
-
 }
 
 
