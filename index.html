@@ -256,8 +256,8 @@
     <!-- S-L-A INPUT FORM -->
             <form id="hue-form">
                 <label for="new-hue-slider" class="text-form-hue">Try a different HUE</label>
-                <input id="new-hue-slider" type="range" name="new-hue-slider" min="0" max="359" value="176" oninput="this.nextElementSibling.value = this.value">                                                       
-                <output id="amount" name="amount" for="new-hue-slider">176</output>
+                <input id="new-hue-slider" type="range" name="new-hue-slider" autocomplete="off" min="0" max="359" value="176" oninput="this.nextElementSibling.value = this.value">
+                <input id="new-hue-number" type="number" name="new-hue-number" autocomplete="off" min="0" max="359" value="176" oninput="this.nextElementSibling.value = this.value">
             </form>
 </div>
 
@@ -282,27 +282,26 @@
 <div class="custom-controls">
                         <div class="hue-1">
                             <label for="hue1" class="text-form">H</label>
-                            <input id="hue1" type="range" min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
-                            <output id="hue1-amount" name="hue1-amount" for="hue1">30</output>
+                            <input id="hue1" name="hue1-slider" autocomplete="off" type="range" min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue1-number" class="input-number" autocomplete="off" type="number" name="hue1-number"  min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
                         </div>
                         
                         <div class="sat-1">
                             <label for="sat1" class="text-form">S</label>
-                            <input id="sat1" name="sat1" type="range" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
-
-                            <output id="sat1-amount" name="sat1-amount" for="sat1">60</output>
+                            <input id="sat1" name="sat1" autocomplete="off" type="range" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat1-number" name="sat1-number" autocomplete="off" type="number" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="lig-1">
                             <label for="lig1" class="text-form">L</label>
-                            <input id="lig1" name="lig1" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-                            <output id="lig1-amount" name="lig1-amount" for="lig1">50</output>
+                            <input id="lig1" name="lig1" autocomplete="off" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig1-number" name="lig1-number" autocomplete="off" type="number" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="alph-1">
                             <label for="alph1" class="text-form">A</label>
-                            <input id="alph1" name="alph1" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
-                            <output id="alph1-amount" name="alph1-amount" for="alph1">100</output>
+                            <input id="alph1" name="alph1" autocomplete="off" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                            <input id="alph1-number" name="alph1-number" autocomplete="off" type="number" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
                         </div>
 </div>
                     </div>
@@ -315,27 +314,26 @@
 <div class="custom-controls">
                         <div class="hue-2">
                             <label for="hue2" class="text-form">H</label>
-                            <input id="hue2" type="range" min="0" max="359" value="190" oninput="this.nextElementSibling.value = this.value">
-                            <output id="hue2-amount" name="hue2-amount" for="hue2">190</output>
+                            <input id="hue2" name="hue2" autocomplete="off" type="range" min="0" max="359" value="190" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue2-number" class="input-number" type="number" name="hue2-number" autocomplete="off" min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
                         </div>
                         
                         <div class="sat-2">
                             <label for="sat2" class="text-form">S</label>
-                            <input id="sat2" name="sat2" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-
-                            <output id="sat2-amount" name="sat2-amount" for="sat2">50</output>
+                            <input id="sat2" name="sat2" autocomplete="off" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat2-number" name="sat2-number" autocomplete="off" type="number" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="lig-2">
                             <label for="lig2" class="text-form">L</label>
-                            <input id="lig2" name="lig2" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-                            <output id="lig2-amount" name="lig2-amount" for="lig2">50</output>
+                            <input id="lig2" name="lig2" autocomplete="off" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig2-number" name="lig2-number" autocomplete="off" type="number" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="alph-2">
                             <label for="alph2" class="text-form">A</label>
-                            <input id="alph2" name="alph2" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
-                            <output id="alph2-amount" name="alph2-amount" for="alph2">100</output>
+                            <input id="alph2" name="alph2" autocomplete="off" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                            <input id="alph2-number" name="alph2-number" autocomplete="off" type="number" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
                         </div>
 </div>
                     </div>
@@ -348,27 +346,26 @@
 <div class="custom-controls">
                         <div class="hue-3">
                             <label for="hue3" class="text-form">H</label>
-                            <input id="hue3" type="range" min="0" max="359" value="270" oninput="this.nextElementSibling.value = this.value">
-                            <output id="hue3-amount" name="hue3-amount" for="hue3">270</output>
+                            <input id="hue3" name="hue3" autocomplete="off" type="range" min="0" max="359" value="270" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue3-number" autocomplete="off" class="input-number" type="number" name="hue3-number" min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
                         </div>
                         
                         <div class="sat-3">
                             <label for="sat3" class="text-form">S</label>
-                            <input id="sat3" name="sat3" type="range" min="0" max="100" value="90" oninput="this.nextElementSibling.value = this.value">
-
-                            <output id="sat3-amount" name="sat3-amount" for="sat3">90</output>
+                            <input id="sat3" name="sat3" autocomplete="off" type="range" min="0" max="100" value="90" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat3-number" name="sat3-number" autocomplete="off" type="number" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="lig-3">
                             <label for="lig3" class="text-form">L</label>
-                            <input id="lig3" name="lig3" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-                            <output id="lig3-amount" name="lig3-amount" for="lig3">50</output>
+                            <input id="lig3" name="lig3" autocomplete="off" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig3-number" name="lig3-number" autocomplete="off" type="number" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="alph-3">
                             <label for="alph3" class="text-form">A</label>
-                            <input id="alph3" name="alph3" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
-                            <output id="alph3-amount" name="alph3-amount" for="alph3">100</output>
+                            <input id="alph3" name="alph3" autocomplete="off" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                            <input id="alph3-number" name="alph3-number" autocomplete="off" type="number" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
                         </div>
 </div>
                     </div>
@@ -381,27 +378,26 @@
 <div class="custom-controls">
                         <div class="hue-4">
                             <label for="hue4" class="text-form">H</label>
-                            <input id="hue4" type="range" min="0" max="359" value="330" oninput="this.nextElementSibling.value = this.value">
-                            <output id="hue4-amount" name="hue4-amount" for="hue4">330</output>
+                            <input id="hue4" name="hue4" autocomplete="off" type="range" min="0" max="359" value="330" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue4-number" name="hue4-number" autocomplete="off" class="input-number" type="number" name="hue4-number"  min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
                         </div>
                         
                         <div class="sat-4">
                             <label for="sat4" class="text-form">S</label>
-                            <input id="sat4" name="sat4" type="range" min="0" max="100" value="70" oninput="this.nextElementSibling.value = this.value">
-
-                            <output id="sat4-amount" name="sat4-amount" for="sat4">70</output>
+                            <input id="sat4" name="sat4" autocomplete="off" type="range" min="0" max="100" value="70" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat4-number" name="sat4-number" autocomplete="off" type="number" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="lig-4">
                             <label for="lig4" class="text-form">L</label>
-                            <input id="lig4" name="lig4" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-                            <output id="lig4-amount" name="lig4-amount" for="lig4">50</output>
+                            <input id="lig4" name="lig4" autocomplete="off" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig4-number" name="lig4-number" autocomplete="off" type="number" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="alph-4">
                             <label for="alph4" class="text-form">A</label>
-                            <input id="alph4" name="alph4" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
-                            <output id="alph4-amount" name="alph4-amount" for="alph4">100</output>
+                            <input id="alph4" name="alph4" autocomplete="off"  type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                            <input id="alph4-number" name="alph4-number" autocomplete="off" type="number" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
                         </div>
 </div>
                     </div>
@@ -414,27 +410,26 @@
 <div class="custom-controls">
                         <div class="hue-5">
                             <label for="hue5" class="text-form">H</label>
-                            <input id="hue5" type="range" min="0" max="359" value="80" oninput="this.nextElementSibling.value = this.value">
-                            <output id="hue5-amount" name="hue5-amount" for="hue5">80</output>
+                            <input id="hue5" name="hue5" autocomplete="off" type="range" min="0" max="359" value="80" oninput="this.nextElementSibling.value = this.value">
+                            <input id="hue5-number" name="hue5-number" autocomplete="off" class="input-number" type="number" name="hue5-number"  min="0" max="359" value="30" oninput="this.nextElementSibling.value = this.value">
                         </div>
                         
                         <div class="sat-5">
                             <label for="sat5" class="text-form">S</label>
-                            <input id="sat5" name="sat5" type="range" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
-
-                            <output id="sat5-amount" name="sat5-amount" for="sat5">60</output>
+                            <input id="sat5" name="sat5" autocomplete="off" type="range" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
+                            <input id="sat5-number" name="sat5-number" autocomplete="off" type="number" min="0" max="100" value="60" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="lig-5">
                             <label for="lig5" class="text-form">L</label>
-                            <input id="lig5" name="lig5" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-                            <output id="lig5-amount" name="lig5-amount" for="lig5">50</output>
+                            <input id="lig5" name="lig5" autocomplete="off" type="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                            <input id="lig5-number" name="lig5-number" autocomplete="off" type="number" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
                         </div>
 
                         <div class="alph-5">
                             <label for="alph5" class="text-form">A</label>
-                            <input id="alph5" name="alph5" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
-                            <output id="alph5-amount" name="alph5-amount" for="alph5">100</output>
+                            <input id="alph5" name="alph5" autocomplete="off" type="range" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
+                            <input id="alph5-number" name="alph5-number" autocomplete="off" type="number" min="0" max="100" value="100" oninput="this.nextElementSibling.value = this.value">
                         </div>
 </div>
                     </div>
