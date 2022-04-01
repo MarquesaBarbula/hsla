@@ -337,6 +337,10 @@ footer {
         width: 15%; 
     }
 
+    .contactIcons {
+        width: 80%;
+      }
+
 }
 
 @media only screen and (max-width: 680px) {
