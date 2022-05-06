@@ -21,32 +21,37 @@ html {
     --main-color: #F9A051;
     --icon-color: #eb6624;
 /* SLA variations */
-    --try_this_color: 176;
+    --try_this_color: 32;
 /* custom color 1 */
     --try_h_1: 30;
-    --try_s_1: 60%;
+    --try_s_1: 100%;
     --try_l_1: 50%;
     --try_a_1: 100%;
  /* custom color 2 */
-    --try_h_2: 190;
-    --try_s_2: 50%;
-    --try_l_2: 50%;
+    --try_h_2: 178;
+    --try_s_2: 65%;
+    --try_l_2: 46%;
     --try_a_2: 100%;
 /* custom color 3 */
     --try_h_3: 270;
-    --try_s_3: 90%;
+    --try_s_3: 36%;
     --try_l_3: 50%;
     --try_a_3: 100%;
 /* custom color 4 */
     --try_h_4: 330;
     --try_s_4: 70%;
-    --try_l_4: 50%;
+    --try_l_4: 69%;
     --try_a_4: 100%;
 /* custom color 5 */
     --try_h_5: 80;
     --try_s_5: 60%;
     --try_l_5: 50%;
     --try_a_5: 100%;
+/* custom color 6 */
+    --try_h_6: 60;
+    --try_s_6: 77%;
+    --try_l_6: 60%;
+    --try_a_6: 100%;
 }
 
 /* LAYOUT AND TEXT SETTINGS */
@@ -242,7 +247,7 @@ a:focus {
     line-height: 2.5rem;
 }
 
-#hue1-number, #hue2-number, #hue3-number, #hue4-number, #hue5-number, #sat1-number, #sat2-number, #sat3-number, #sat4-number, #sat5-number, #lig1-number, #lig2-number, #lig3-number, #lig4-number, #lig5-number, #alph1-number, #alph2-number, #alph3-number, #alph4-number, #alph5-number {
+#hue1-number, #hue2-number, #hue3-number, #hue4-number, #hue5-number, #hue6-number, #sat1-number, #sat2-number, #sat3-number, #sat4-number, #sat5-number,#sat6-number, #lig1-number, #lig2-number, #lig3-number, #lig4-number, #lig5-number,#lig6-number, #alph1-number, #alph2-number, #alph3-number, #alph4-number, #alph5-number,#alph6-number {
     width: 30%;
     color: whitesmoke;
     background-color: #444444;
@@ -251,10 +256,10 @@ a:focus {
     text-align: center;
 }
 
-#hue1, #hue2, #hue3, #hue4, #hue5,
-#sat1, #sat2, #sat3, #sat4, #sat5,
-#lig1, #lig2, #lig3, #lig4, #lig5,
-#alph1, #alph2, #alph3, #alph4, #alph5 {
+#hue1, #hue2, #hue3, #hue4, #hue5, #hue6,
+#sat1, #sat2, #sat3, #sat4, #sat5, #sat6,
+#lig1, #lig2, #lig3, #lig4, #lig5, #lig6,
+#alph1, #alph2, #alph3, #alph4, #alph5, #alph6 {
     width: 45%;
 }
 
@@ -608,4 +613,7 @@ footer {
 }
 .color-cust5 {
     background-color: hsla(var(--try_h_5), var(--try_s_5), var(--try_l_5), var(--try_a_5));
+}
+.color-cust6 {
+    background-color: hsla(var(--try_h_6), var(--try_s_6), var(--try_l_6), var(--try_a_6));
 }
