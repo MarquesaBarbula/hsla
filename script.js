@@ -695,7 +695,7 @@ const numlig6 = document.getElementById("lig6-number");
 const rootlig6 = document.documentElement;
 
 sliderlig6.addEventListener("input", (e) => {
-    root.style.setProperty("--try_l_5", e.target.value + "%");
+    root.style.setProperty("--try_l_6", e.target.value + "%");
 });
 
 numlig6.addEventListener("input", (e) => {
@@ -725,7 +725,7 @@ const numalph6 = document.getElementById("alph6-number");
 const rootalph6 = document.documentElement;
 
 slideralph6.addEventListener("input", (e) => {
-    root.style.setProperty("--try_a_5", e.target.value + "%");
+    root.style.setProperty("--try_a_6", e.target.value + "%");
 });
 
 numalph6.addEventListener("input", (e) => {
