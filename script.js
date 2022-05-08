@@ -690,7 +690,7 @@ function scaleValue(value, from, to) {
 
 // color 6 - lig6
 
-const sliderlig6 = document.getElementById("lig5");
+const sliderlig6 = document.getElementById("lig6");
 const numlig6 = document.getElementById("lig6-number");
 const rootlig6 = document.documentElement;
 
