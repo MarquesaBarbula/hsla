@@ -188,11 +188,13 @@ a:focus {
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 3rem;
+    cursor: pointer;
 }
 
 .text-form-hue {
     font-size: 1.4rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #new-hue-slider {
@@ -200,6 +202,7 @@ a:focus {
     width: 50%;
     margin: auto;
     text-align: center;
+    cursor: pointer;
 }
 
 #new-hue-number {
@@ -208,7 +211,8 @@ a:focus {
     background-color: #444444;
     margin: none;
     border: none;
-    text-align: center; 
+    text-align: center;
+    cursor: pointer;
 }
 
 
@@ -245,6 +249,7 @@ a:focus {
     font-weight: 400;
     font-size: 1rem;
     line-height: 2.5rem;
+    cursor: pointer;
 }
 
 #hue1-number, #hue2-number, #hue3-number, #hue4-number, #hue5-number, #hue6-number, #sat1-number, #sat2-number, #sat3-number, #sat4-number, #sat5-number,#sat6-number, #lig1-number, #lig2-number, #lig3-number, #lig4-number, #lig5-number,#lig6-number, #alph1-number, #alph2-number, #alph3-number, #alph4-number, #alph5-number,#alph6-number {
@@ -254,6 +259,7 @@ a:focus {
     margin: none;
     border: none;
     text-align: center;
+    cursor: pointer;
 }
 
 #hue1, #hue2, #hue3, #hue4, #hue5, #hue6,
@@ -261,6 +267,7 @@ a:focus {
 #lig1, #lig2, #lig3, #lig4, #lig5, #lig6,
 #alph1, #alph2, #alph3, #alph4, #alph5, #alph6 {
     width: 45%;
+    cursor: pointer;
 }
 
 /* contact */
