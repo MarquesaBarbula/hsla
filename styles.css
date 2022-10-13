@@ -93,6 +93,7 @@ h4 {
     color: whitesmoke;
 }
 h5 {
+    font-weight: 400;
     font-size: 1rem;  
     line-height: 1.3rem;
     color: whitesmoke;
@@ -118,6 +119,10 @@ a:focus {
 .selected-text {
     font-size: 1.2rem;
     font-weight: 900;
+}
+
+.intro_specs {
+margin-bottom:3rem;
 }
 
 /* COLORS LAYOUT */
