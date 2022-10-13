@@ -7,12 +7,6 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
   }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
 
 /* VARIABLES */
 
@@ -138,10 +132,13 @@ a:focus {
 }
 
 #hue-swatches,
-#try-this-hue,
 #custom-palette {
     margin-top: 3rem;
     border-top: var(--main-color) 2px solid;
+}
+
+#try-this-hue  {
+    margin-top: 3rem;
 }
 
 .color-wheel {
@@ -327,6 +324,7 @@ footer {
     }
 
     #try-this-hue {
+        margin-top: 3rem;
         width: 90%;
         margin: auto;
     }
@@ -362,6 +360,7 @@ footer {
     }
 
     #try-this-hue {
+        margin-top: 3rem;
         width: 100%;
     }
 
