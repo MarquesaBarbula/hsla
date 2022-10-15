@@ -2,18 +2,22 @@
 
 html {
     box-sizing: border-box;
-
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
-  }
+}
 
 /* VARIABLES */
 
 :root {
 /* main color */
-    --main-color: #F9A051;
-    --icon-color: #eb6624;
+    --main-color: hsla(32, 80%, 50%, 100%);
+    --font-color:hsla(0, 0%, 96%, 100%);
+    --icon-color: hsla(32, 0%, 50%, 100%);
+    --icon-hovercolor: hsla(32, 80%, 50%, 100%);
+    --footer-textcolor:hsla(32, 0%, 17%, 100%);
+    --footer-bckgrndcolor:hsla(30, 29%, 5%, 100%);
+    --background-color:hsla(32, 0%, 13%, 100%);
 /* SLA variations */
     --try_this_color: 32;
 /* custom color 1 */
@@ -21,7 +25,7 @@ html {
     --try_s_1: 100%;
     --try_l_1: 50%;
     --try_a_1: 100%;
- /* custom color 2 */
+/* custom color 2 */
     --try_h_2: 178;
     --try_s_2: 65%;
     --try_l_2: 46%;
@@ -63,14 +67,14 @@ body {
     margin: auto;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #212121;
+    background-color: var(--background-color);
 }
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     line-height: 2rem;
-    color: whitesmoke;
+    color: var(--font-color);
 }
 
 h2 {
@@ -84,21 +88,25 @@ h3 {
     margin-bottom: 3rem;
     font-size: 1.6rem;  
     line-height: 0.8rem;
-    color: whitesmoke;
+    color: var(--font-color);
 }
 
 h4 {
     font-size: 1.6rem;  
     line-height: 0.8rem;
-    color: whitesmoke;
+    color: var(--font-color)
 }
 h5 {
     font-weight: 400;
     font-size: 1rem;  
     line-height: 1.3rem;
-    color: whitesmoke;
+    color: var(--font-color);
 }
-
+h6 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--icon-color);
+}
 p {
     font-weight: 400;
     font-size: 0.8rem;
@@ -107,13 +115,13 @@ p {
 }
 
 a {
-    color: var(--main-color);
+    color: var(--icon-color);
     transition: color 0.5s;
 }
 
 a:hover,
 a:focus {
-    color:var(--icon-color); 
+    color:var(--icon-hovercolor); 
 }
 
 .selected-text {
@@ -124,6 +132,7 @@ a:focus {
 .intro_specs {
 margin-bottom:3rem;
 }
+
 
 /* COLORS LAYOUT */
 
@@ -139,7 +148,7 @@ margin-bottom:3rem;
 #hue-swatches,
 #custom-palette {
     margin-top: 3rem;
-    border-top: var(--main-color) 2px solid;
+    border-top: var(--footer-bckgrndcolor) 2px solid;
 }
 
 #try-this-hue  {
@@ -186,7 +195,7 @@ margin-bottom:3rem;
 #hue-form {
     margin-top: 2rem;
     text-align: center;
-    color: whitesmoke;
+    color: var(--font-color);
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 3rem;
@@ -209,8 +218,8 @@ margin-bottom:3rem;
 
 #new-hue-number {
     width: 10%;
-    color: whitesmoke;
-    background-color: #444444;
+    color: var(--font-color);
+    background-color: var(--footer-textcolor);
     margin: none;
     border: none;
     text-align: center;
@@ -247,7 +256,7 @@ margin-bottom:3rem;
     width: 100%;
     margin: auto;
     margin-top: 1rem;
-    color: whitesmoke;
+    color: var(--font-color);
     font-weight: 400;
     font-size: 1rem;
     line-height: 2.5rem;
@@ -257,7 +266,7 @@ margin-bottom:3rem;
 #hue1-number, #hue2-number, #hue3-number, #hue4-number, #hue5-number, #hue6-number, #sat1-number, #sat2-number, #sat3-number, #sat4-number, #sat5-number,#sat6-number, #lig1-number, #lig2-number, #lig3-number, #lig4-number, #lig5-number,#lig6-number, #alph1-number, #alph2-number, #alph3-number, #alph4-number, #alph5-number,#alph6-number {
     width: 30%;
     color: whitesmoke;
-    background-color: #444444;
+    background-color: var(--footer-textcolor);
     margin: none;
     border: none;
     text-align: center;
@@ -275,7 +284,7 @@ margin-bottom:3rem;
 /* contact */
 footer {
     margin-top: 3rem;
-    background-color: #0e0c0a;
+    background-color: var(--footer-bckgrndcolor);
 }
 
 .text-footer {
@@ -283,22 +292,22 @@ footer {
     padding: 1rem 0 1rem 0;
     font-size: 0.7rem;
     text-align: center;
-    color: #444444;
+    color: var(--footer-textcolor);
 }
 #contact {
     width: 100%;
     margin: auto;
-    padding-top: 1rem;
+    padding-top: 0.2rem;
     text-align: center;
-    color:whitesmoke;
-  }
+}
 
-  .contactFlex {
+.contactFlex {
+    margin-top: -1rem;
     display: flex;
     width: 100%;
+}
+.contactIcons {
 
-  }
-  .contactIcons {
     display: inline-flex;
     justify-content: space-around;
     margin: auto;
@@ -353,7 +362,7 @@ footer {
     }
 
     .contactIcons {
-        width: 80%;
+        width: 30%;
       }
 
 }
@@ -554,15 +563,15 @@ footer {
 }
 .color-lig9 {
     background-color: hsla(var(--try_this_color), 100%, 20%, 100%);
-    color: whitesmoke;
+    color: var(--font-color);
 }
 .color-lig10 {
     background-color: hsla(var(--try_this_color), 100%, 10%, 100%);
-    color: whitesmoke;
+    color: var(--font-color);
 }
 .color-lig11 {
     background-color: hsla(var(--try_this_color), 100%, 0%, 100%);
-    color: whitesmoke;
+    color: var(--font-color);
 }
 
 /* ALPHA SWATCHES */
@@ -593,15 +602,15 @@ footer {
 }
 .color-alph9 {
     background-color: hsla(var(--try_this_color), 100%, 50%, 20%);
-    color: whitesmoke;
+    color: var(--font-color);
 }
 .color-alph10 {
     background-color: hsla(var(--try_this_color), 100%, 50%, 10%);
-    color: whitesmoke;
+    color: var(--font-color);
 }
 .color-alph11 {
     background-color: hsla(var(--try_this_color), 100%, 50%, 0%);
-    color: whitesmoke;
+    color: var(--font-color);
 }
 
 
