@@ -25,7 +25,7 @@
 <!-- COLOR SWATCHES --> 
 <div id="hue-swatches">
     <h3>HUE</h3>
-    <h5 class="intro_specs">Hue is a number between 0 and 360. It’s measured in degrees, like degrees of a circle:<br>Pure red is 0° (and 360°, its a circle, remember?), pure green is 120° and pure blue is 240°
+    <h5 class="intro_specs">Hue is a number between 0 and 360. Since it is a circle, it is measured in degrees:<br>Pure red is 0° (that is the same to 360°, its a circle, remember?), pure green is 120° and pure blue is 240°.
     </h5>      
 
         <div class="color-wheel">
@@ -144,7 +144,7 @@
     <div class="s-l-a">
     <!-- COLOR SATURATION SWATCHES -->
         <h3>SATURATION</h3>
-        <h5 class="intro_specs">Saturation is how intense or dull is a color:<br>100% will be the richest possible version and 0% will be the gray version of that color</h5>
+        <h5 class="intro_specs">Saturation is the intensity or dullness of a color:<br>100% will be the richest possible version and 0% will be the gray version.</h5>
                 <div class="colorgroup">
                     <div class="colorito color-sat1">
                         <p><span class="selected-text">S100%</span><br>L50%<br>A100%</p>
@@ -182,7 +182,7 @@
                 </div>
     <!-- COLOR LIGHTNESS SWATCHES -->
         <h3>LIGHTNESS</h3>
-        <h5 class="intro_specs">Sometimes reffered to as "Brightness", this is a number between 0 and 100 and it controls how light or dark is a color:<br>0% lightness is black and 100% lightness is white. 50% lightness is the color in its original brightness</h5>        
+        <h5 class="intro_specs">Sometimes refered to as "Brightness", it is a number between 0 and 100, it controls how light or dark is a color:<br>0% lightness is black and 100% lightness is white. 50% lightness is the color in its original brightness.</h5>        
                 <div class="colorgroup">
                     <div class="colorito color-lig1">
                         <p>S100%<br><span class="selected-text">L100%</span><br>A100%</p>
@@ -220,7 +220,7 @@
                 </div>
     <!-- ALPHA SWATCHES -->
         <h3>ALPHA</h3>
-        <h5 class="intro_specs">Alpha is the transparency of the color,this could be also understood as how much of the background is blended into the color:<br>100% is fully opaque, while 0% is completely transparent</h5>       
+        <h5 class="intro_specs">Alpha is the transparency of the color,this could be also understood as how much of the background is blended into the color:<br>100% is fully opaque, while 0% is completely transparent.</h5>       
                 <div class="colorgroup">
                     <div class="colorito color-alph1">
                         <p>S100%<br>L50%<br><span class="selected-text">A100%</span></p>
@@ -261,9 +261,9 @@
     <!-- S-L-A INPUT FORM -->
             <form id="hue-form">
                 <label for="new-hue-slider" class="text-form-hue">Try a different hue</label>
-                <h5 class="intro_specs">Select a hue to see how it interacts with the other values.</h5>
-                <input id="new-hue-slider" type="range" name="new-hue-slider" autocomplete="off" min="0" max="359" value="32" oninput="this.nextElementSibling.value = this.value">
-                <input id="new-hue-number" type="number" name="new-hue-number" autocomplete="off" min="0" max="359" value="32" oninput="this.nextElementSibling.value = this.value">
+                <h5 class="intro_specs">Select a hue to watch it interact with the other values.</h5>
+                <input id="new-hue-slider" type="range" name="new-hue-slider" autocomplete="off" min="0" max="359" value="207" oninput="this.nextElementSibling.value = this.value">
+                <input id="new-hue-number" type="number" name="new-hue-number" autocomplete="off" min="0" max="359" value="207" oninput="this.nextElementSibling.value = this.value">
             </form>
 </div>
 
@@ -493,7 +493,7 @@
             </div>
         </section>
 
-        <p class="text-footer">HSLAcolor test 1.5</p>
+        <p class="text-footer">HSLA color tool 1.8</p>
     </footer>
 
 </body>
