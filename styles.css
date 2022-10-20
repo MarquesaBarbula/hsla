@@ -124,6 +124,10 @@ a:focus {
     color:var(--icon-hovercolor); 
 }
 
+.link_to_hex {
+    margin-top: 2rem;
+}
+
 .selected-text {
     font-size: 1.2rem;
     font-weight: 900;
